@@ -1,0 +1,32 @@
+# DICAS SOBRE PYTHON:
+# FUNÇÃO input(): Ela recebe como parâmetro uma String que será visível ao usuário, 
+# onde geralmente informa que tipo de informação ele está esperando receber;
+# FUNÇÃO print(): Ela é a responsável por imprimir os dados e informar os valores no terminal;
+# MÉTODO split(): permite dividir o conteúdo da variável de acordo com as condições especificadas 
+# em cada parâmetro da função ou com os valores predefinidos por padrão;
+
+# Abaixo segue um exemplo de código que você pode ou não utilizar
+salario = float(input()) 
+
+if (salario<600.0  ):
+  percente=17
+elif ((salario>600)and(salario<=900)):
+  percente=13
+elif ((salario>900)and(salario<=1500)):
+  percente=12
+elif ((salario>1500)and(salario<=2000)):
+  percente=10
+else: 
+  percente=5
+novo=salario*(1+percente/100)
+# trocando . por ,
+reajuste=str(f"{novo-salario:.2f}").replace(".",",")
+novo=str(f"{novo:.2f}").replace(".",",")
+
+
+print(f"""Novo salario: {novo}
+Reajuste ganho: {reajuste}
+    
+Em percentual: {percente:.0f} %
+    """)
+# TODO:  Calcule o salário do funcionário e print o novo salário, bem como o valor de reajuste ganho e o índice reajustado (em porcentagem)

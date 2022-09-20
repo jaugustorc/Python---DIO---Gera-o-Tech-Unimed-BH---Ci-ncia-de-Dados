@@ -1,0 +1,17 @@
+while True: 
+    try: 
+           # TODO:  Programe aqui dentro as condições necessárias para satisfazer o problema
+           # e imprima a saída de acordo com a situação das pernas do papagaio
+        perna=input()
+        if(perna=="esquerda"):
+            output="ingles"
+        if(perna=="direita"):
+           output="frances"
+        if(perna=="nenhuma"):
+            output="portugues"
+        if(perna=="ambas"):
+            output="caiu"
+       
+        print(f"{output}\n")
+    except EOFError: 
+        break
