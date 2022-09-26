@@ -3,7 +3,7 @@ class Pessoa:
         self.nome = nome
         self.idade = idade
 
-    @classmethod
+    @classmethod # retorno é uma classe
     def criar_de_data_nascimento(cls, ano, mes, dia, nome):
         idade = 2022 - ano
         return cls(nome, idade)

@@ -21,9 +21,9 @@ class ControleTV(ControleRemoto):
         print("Ligando a TV...")
         print("Ligada!")
 
-    def desligar(self):
-        print("Desligando a TV...")
-        print("Desligada!")
+#    def desligar(self):
+#        print("Desligando a TV...")
+#        print("Desligada!")
 
     @property
     def marca(self):

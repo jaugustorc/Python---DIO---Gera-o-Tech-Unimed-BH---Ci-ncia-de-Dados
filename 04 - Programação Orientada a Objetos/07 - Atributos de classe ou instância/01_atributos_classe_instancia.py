@@ -1,8 +1,8 @@
 class Estudante:
-    escola = "DIO"
+    escola = "DIO" # é compartilhado entre os objetos
 
     def __init__(self, nome, matricula):
-        self.nome = nome
+        self.nome = nome #unico ao objeto
         self.matricula = matricula
 
     def __str__(self) -> str:
@@ -18,6 +18,7 @@ aluno_1 = Estudante("Guilherme", 1)
 aluno_2 = Estudante("Giovanna", 2)
 mostrar_valores(aluno_1, aluno_2)
 
-Estudante.escola = "Python"
+Estudante.escola = "Python"# altera para todos
+aluno_1.escola="teste" #altera somente do aluno1
 aluno_3 = Estudante("Chappie", 3)
 mostrar_valores(aluno_1, aluno_2, aluno_3)

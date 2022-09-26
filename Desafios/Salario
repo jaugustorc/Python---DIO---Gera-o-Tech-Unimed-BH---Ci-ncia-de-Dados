@@ -20,13 +20,22 @@ else:
   percente=5
 novo=salario*(1+percente/100)
 # trocando . por ,
-reajuste=str(f"{novo-salario:.2f}").replace(".",",")
-novo=str(f"{novo:.2f}").replace(".",",")
+reajuste=novo-salario
+
+#reajuste=str(f"{novo-salario:.2f}").replace(".",",")
+#novo=str(f"{novo:.2f}").replace(".",",")
 
 
-print(f"""Novo salario: {novo}
-Reajuste ganho: {reajuste}
+#print(f"""Novo salario: {novo}
+#Reajuste ganho: {reajuste}
     
-Em percentual: {percente:.0f} %
-    """)
+#Em percentual: {percente:.0f} %
+#    """)
+    
+    
+print(f'Novo salario: {novo:.2f}')
+
+print(f'Reajuste: {reajuste:.2f}')
+
+print(f'Percentual:{percente} %')
 # TODO:  Calcule o salário do funcionário e print o novo salário, bem como o valor de reajuste ganho e o índice reajustado (em porcentagem)

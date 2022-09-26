@@ -6,6 +6,9 @@ class Conta:
     def depositar(self, valor):
         # ...
         self._saldo += valor
+    
+    def extrato(self):
+        print(self._saldo)
 
     def sacar(self, valor):
         # ...
@@ -17,6 +20,7 @@ class Conta:
 
 
 conta = Conta("0001", 100)
+conta._saldo=1
 conta.depositar(100)
 print(conta.nro_agencia)
 print(conta.mostrar_saldo())
